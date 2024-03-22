@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row justify-content-end">
+        <div class="col-auto">
+            <a asp-controller="Dashboard" asp-action="Index">Inicio</a>
+        </div>
+        <div class="col-auto">
+            <a class="text-decoration-none text-black" asp-controller="Productos" asp-action="CrearProducto">Crear Nuevo Producto</a>
+        </div>
+    </div>
+</div>
+
+<div class="container d-flex justify-content-center align-items-center">
+    <div class="row">
+        <div class="col-auto">
+            <div class="card">
+                <div class="card-body">
+                    <h1>Se ha eliminado con éxito el producto</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-3">
+    <div class="row justify-content-center">
+        <a type="button" class="btn btn-primary btn-lg w-25" asp-controller="Productos" asp-action="Index">Ver Lista productos</a>
+    </div>
+</div>

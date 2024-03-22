@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="row justify-content-end">
+    <div class="col-auto">
+      <a asp-controller="Dashboard" asp-action="Index">Inicio</a>
+    </div>
+    <div class="col-auto">
+      <a class="text-decoration-none text-black" asp-controller="#" asp-action="#"> Gestion Productos</a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <a class="btn btn-outline-primary" asp-controller="Productos" asp-action="CrearProducto">Crear Nuevo Producto</a>
+    </div>
+  </div>
+</div>
+<table class="table ">
+  <thead class="thead-dark text-center">
+    <tr>
+      <th scope="col">Número</th>
+      <th scope="col">Imagen</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Cantidad</th>
+      <th class="text-center" scope="col">Acciones</th>
+    </tr>
+  </thead>
+  <tbody class="text-center">
+    <tr>
+      <th>1</th>
+      <td><img src="https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750649500407L.jpg?odnHeight=50&odnWidth=50&odnBg=FFFFFF" alt=""></td>
+      <td>Atún</td>
+      <td>$10.000</td>
+      <td>10</td>
+      <td>
+        <a class="btn btn-danger" asp-controller="Productos" asp-action="EliminarProducto">Eliminar</a>
+        <a class="btn btn-success" asp-controller="Productos" asp-action="EditarProducto">Editar</a>
+        <a class="btn btn-info" asp-controller="Productos" asp-action="MostrarProducto">Detalles</a>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>

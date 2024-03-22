@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row justify-content-end">
+    <div class="col-auto">
+      <a asp-controller="Dashboard" asp-action="Index">Inicio</a>
+    </div>
+    <div class="col-auto">
+      <a class="text-decoration-none text-black" asp-controller="#" asp-action="#"> Gestion Usuario</a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <a class="btn btn-outline-primary" asp-controller="User" asp-action="Crear">Crear Nuevo Usuario</a>
+    </div>
+  </div>
+</div>
+<table class="table ">
+  <thead class="thead-dark text-center">
+    <tr>
+      <th scope="col">Número</th>
+      <th scope="col">Nombres</th>
+      <th scope="col">Apellidos</th>
+      <th scope="col">Correo</th>
+      <th scope="col">Genero</th>
+      <th scope="col">Edad</th>
+      <th class="text-center" scope="col">Acciones</th>
+    </tr>
+  </thead>
+  <tbody class="text-center">
+    <tr>
+      <th>1</th>
+      <td>Robinson</td>
+      <td>Cortes</td>
+      <td>andres@gmail.com</td>
+      <td>M</td>
+      <td>30</td>
+      <td>
+        <a class="btn btn-danger" asp-controller="User" asp-action="Eliminar">Eliminar</a>
+        <a class="btn btn-success" asp-controller="User" asp-action="Editar">Editar</a>
+        <a class="btn btn-info" asp-controller="User" asp-action="Mostrar">Detalles</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
